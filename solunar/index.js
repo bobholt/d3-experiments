@@ -6,7 +6,15 @@ var DAYS_IN_WEEK = 7;
 
   var table = viewer.append('table');
 
-  var thead = table.append('thead');
+  var thead = table.append('thead').html(
+    '<th>Sunday</th>' +
+    '<th>Monday</th>' +
+    '<th>Tuesday</th>' +
+    '<th>Wednesday</th>' +
+    '<th>Thursday</th>' +
+    '<th>Friday</th>' +
+    '<th>Saturday</th>'
+  );
   var tbody = table.append('tbody');
 
   var boxWidth = 100;
