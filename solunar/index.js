@@ -128,7 +128,7 @@ var DAYS_IN_WEEK = 7;
       .attr('d', function(d) {
 
         // TODO: d.moon is the percentage of moon visible, NOT rotation - need some calculus here
-        projection.rotate([d.moon * 180, 0, 0]);
+        projection.rotate([-d.moon * 180, 0, 0]);
         path = d3.geo.path().projection(projection);
         return path(d3.geo.circle().angle(90).origin([0, 0])());
       });
