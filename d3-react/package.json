@@ -7,7 +7,13 @@
     "start": "hjs-dev-server",
     "build": "webpack",
     "deploy": "echo \"Error: no deployment specified\" && exit 1",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preversion": "git checkout master && git pull && npm run validate",
+    "publish-patch": "npm run preversion && npm version patch && git push origin master --tags",
+    "publish-minor": "npm run preversion && npm version minor && git push origin master --tags",
+    "publish-major": "npm run preversion && npm version major && git push origin master --tags",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "jshint .",
+    "validate": "npm ls"
   },
   "author": "",
   "license": "ISC",
@@ -25,11 +31,18 @@
     "intl": "^1.1.0",
     "json-loader": "^0.5.4",
     "postcss-loader": "^0.8.2",
+    "precommit-hook": "*",
     "react": "^15.0.1",
+    "react-addons-css-transition-group": "^15.0.1",
     "react-dom": "^15.0.1",
     "react-intl": "^2.0.1",
     "style-loader": "^0.13.1",
     "stylus": "^0.54.2",
     "stylus-loader": "^2.0.0"
-  }
+  },
+  "pre-commit": [
+    "lint",
+    "validate",
+    "build"
+  ]
 }
