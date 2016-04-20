@@ -1,0 +1,23 @@
+.player-appear,
+.player-enter {
+  fill: blue;
+  opacity: 0.01;
+
+  &.player-appear-active,
+  &.player-enter-active {
+    fill: black;
+    opacity: 1;
+    transition: fill 2.5s linear, opacity 2.5s ease-in;
+  }
+}
+
+.player-leave {
+  opacity: 1
+  fill: black;
+
+  &.player-leave-active {
+    fill: red;
+    opacity: 0.01;
+    transition: fill 2.5s linear, opacity 1.25s ease-in;
+  }
+}

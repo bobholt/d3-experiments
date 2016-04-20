@@ -1,0 +1,91 @@
+Rk -- Rank
+This is a count of the rows from top to bottom.
+It is recalculated following the sorting of a column.
+
+Age -- Player's age on December 31st of that year
+
+Pos -- Position
+In player and team season stats,
+Capitals indicates primary starter.
+Lower-case means part-time starter.
+
+G -- Games played
+
+GS -- Games started as an offensive or defensive player
+Numbers are complete for 1920-49, 1970-72
+and 1975-present but are incomplete otherwise
+
+QBrec -- Team record in games started by this QB (regular season)
+
+Cmp -- Passes completed
+
+Att -- Passes attempted
+
+Cmp% -- Percentage of Passes Completed
+Minimum 14 attempts per scheduled game to qualify as leader.
+Minimum 1500 pass attempts to qualify as career leader.
+
+Yds -- Yards Gained by Passing
+For teams, sack yardage is deducted from this total
+
+TD -- Passing Touchdowns
+
+TD% -- Percentage of Touchdowns Thrown when Attempting to Pass
+Minimum 14 attempts per scheduled game to qualify as leader.
+Minimum 1500 pass attempts to qualify as career leader
+
+Int -- Interceptions thrown
+
+Int% -- Percentage of Times Intercepted when Attempting to Pass
+Minimum 14 attempts per scheduled game to qualify as leader.
+Minimum 1500 pass attempts to qualify as career leader.
+
+Lng -- Longest Completed Pass Thrown (complete since 1975)
+
+Y/A -- Yards gained per pass attempt
+Minimum 14 attempts per scheduled game to qualify as leader.
+Minimum 1500 pass attempts to qualify as career leader.
+
+AY/A -- Adjusted Yards gained per pass attempt
+(Passing Yards + 20 * Passing TD - 45 * Interceptions) / (Passes Attempted)
+Minimum 14 attepts per scheduled game to qualify as leader.
+Minimum 1500 pass attempts to qualify as career leader.
+
+Y/C -- Yards gained per pass completion (Passing Yards) / (Passes Completed)
+Minimum 14 pass attempts per schedule game to qualify as leader.
+Minimum 1500 pass attempts to qualify as career leader
+
+Y/G -- Yards gained per game played
+Minimum half a game played per scheduled game to qualify as leader.
+Minimum 1500 pass attempts to qualify as career leader
+
+Rate -- Quarterback Rating, see glossary for details
+Different ratings are used by the NFL and NCAA.
+Minimum 1500 pass attempts to qualify as career leader, minimum 150 pass attempts for playoffs leader.
+
+QBR -- QBR
+ESPN’s Total Quarterback Rating, calculated since 2006
+
+Sk -- Times Sacked (first recorded in 1969)
+
+Yds -- Yards lost due to sacks (first recorded in 1969)
+
+NY/A -- Net Yards gained per pass attempt
+(Passing Yards - Sack Yards) / (Passes Attempted + Times Sacked)
+Minimum 14 attempts per schedule game to qualify as leader.
+Minimum 1500 pass attempts to qualify as career leader.
+
+ANY/A -- Adjusted Net Yards per Pass Attempt
+(Passing Yards - Sack Yards + (20 * Passing TD) - (45 * Interceptions)) / (Passes Attempted + Times Sacked)
+Minimum 14 attempts per scheduled game to qualify as leader.
+Minimum 1500 pass attempts to qualify as career leader.
+
+Sk% -- Percentage of Time Sacked when Attempting to Pass - Times Sacked / (Passes Attempted + Times Sacked)
+Minimum 14 attempts + sacks per scheduled game to qualify as leader.
+Minimum 1500 pass attempts to qualify as career leader
+
+4QC -- Comebacks led by quarterback.
+Must be an offensive scoring drive in the 4th quarter, with the team trailing by one score, though not necessarily a drive to take the lead. Only games ending in a win or tie are included.
+
+GWD -- Game-winning drives led by quarterback.
+Must be an offensive scoring drive in the 4th quarter or overtime that puts the winning team ahead for the last time.
