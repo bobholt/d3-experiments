@@ -63,6 +63,7 @@ class Point extends BaseComponent {
     return (
       <circle
         onClick={() => {showPlayerName(name)}}
+        title={name}
         r={1e-8}
         ref="circle"
       />
